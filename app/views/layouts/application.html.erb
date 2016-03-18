@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="wrapper">
+    <%= render 'header' %>
 
-<%= yield %>
+    <div id='container'>
+      <%= yield %>
+    </div>
 
+    <%= render 'footer' %>
+
+    <% flash.each do |name, msg| %>
+      <%= render 'flash', name: name, msg: msg %>
+    <% end %>
+
+    <%#= render 'flash', name: 'notice', msg: 'Flash Message Test' %>
+    <%#= render 'flash', name: 'warning', msg: 'Warning Message Test' %>
+  </div>
 </body>
 </html>
