@@ -51,7 +51,13 @@ group :development, :test do
   gem 'hirb'
 end
 
+gem 'compass-rails'
+gem 'bootstrap-sass', '~> 3.3.3'
+gem 'jquery-ui-rails'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jasny-bootstrap'
+end
 
 
 
