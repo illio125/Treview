@@ -59,6 +59,9 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jasny-bootstrap'
 end
 
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'figaro'
 
 
 

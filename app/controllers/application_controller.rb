@@ -4,9 +4,17 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   private
+  # def current_user
+  #   true
+  #   # false
+  # end
+
   def current_user
-    true
-    # false
+    if session[:user_token].present?
+      @current_user ||= User.find_by(token: session[:user_token])
+      session.clear if @current_user.nil?
+      @current_user
+    end
   end
 
   helper_method :current_user
