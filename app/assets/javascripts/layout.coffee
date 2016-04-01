@@ -43,8 +43,10 @@ jQuery ->
       }
     )
 
-
-
+    $('button.search').on 'click', () ->
+      input = $('input.typeahead.tt-input').val().replace(/\ /g, "-")
+      unless input == ""
+        window.location.href = "/videos?for=#{input}"
 
     $(window).resize ->
       height = $('div#background').height()
