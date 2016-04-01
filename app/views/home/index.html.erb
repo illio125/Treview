@@ -1,92 +1,168 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title> Suzin Testing </title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="container">
-  <h1>Welcome to Treview</h1>
-</div>
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-<head>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		  <style>
+		  .jumbotron {
+		  	background-color: transparent; 
+		  	color: #00000;
+		  	text-align: center;
+		  }
+
+		  .bg-howto{
+		  	background-color: #FF5D5D;   /*treview-colour*/
+		  	padding-top: 15px;
+		  }
+		  .overlay figcaption {
+		    position: absolute;
+		    z-index: 1000; /*뭔지 모르겠음 찾아볼것*/
+		    height: 100%;
+		    width: 100%;
+		    padding-top: 15%;
+		    padding-bottom: 15%;
+		    padding-left: 5%;
+		    color: #FFF;
+		    font-weight: 700;
+		    text-align: center;
+		    font-size: 20px; /**some fallback value**/
+		    font-size: 5.4vw; /**responsive size**/
+		}
+		.img-center{
+			margin: 0 auto;
+		}
+
+
+		  </style>
+
 
 	</head>
+	<body>
+		<!-- 로고&모토 들어가는 div -->
+		<!-- 16:9 aspect ratio -->
+		<div class="embed-responsive embed-responsive-16by9">
+			<figure class="overlay">
+			<video autoplay loop class="embed-responsive-item">
+			<source src="img/sea.mp4" type="video/mp4"></video>
+			<figcaption>
+				<img src=/img/main_logo.png style="width:500px"><br>
+				<h3>Review your Travel, Treview </h3>
+			</figcaption>
+			</figure>
 
-<body>
+			<!-- 
+		    <iframe class="embed-responsive-item" src="img/sea.mp4"></iframe> -->
 
+		</div>
+		<!-- 
+		<div class="jumbotron text-center"> 
+		  		<img src=/img/main_logo.png style="width:500px">
+		  		<p> Review your Travel, Treview </p> 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-	
-	<!--페이지-->
-	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-		<li data-target="#myCarousel" data-slide-to="3"></li>
-	</ol>
-	<!--페이지-->
+		</div> -->
+		<!--  -에서 -하기 이미지 넣을곳 -->	
+		<div class="jumbotron bg-howto row">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">  
+				
+				<!--페이지-->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
 
-	<div class="carousel-inner">
-		<!--슬라이드1-->
-		<div class="item active"> 
-			<img src=/img/mi1.png
-			style="width:100%" alt="First slide">
-			<div class="container">
-				<div class="carousel-caption">
-					<h1>Slide 1</h1>
-					<p>텍스트 1</p>
+				<div class="carousel-inner ">
+					<!--슬라이드1-->
+					<div class="item active "> 
+						<img src=/img/howto1.png style="width:500px" alt="First slide">
+						<div class="container">
+							<div class="carousel-caption">
+								
+								<h3> 1. 이번주 주제를 확인한다! </h3>
+								<p> ex) 사막에서 춤추기</p>
+							</div>
+						</div>
+					</div>
+					<!--슬라이드2-->
+					<div class="item"> 
+						<img src=/img/howto2.png style="width:500px" data-src="" alt="Second slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h3> 2. 재미있는 컨텐츠를 만들어본다!</h3>
+							</div>
+						</div>
+					</div>
+					
+					<!--슬라이드3-->
+					<div class="item"> 
+						<img src=/img/howto3.png style="width:500px" data-src="" alt="Third slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h3> 3. 업로드를 한다! </h3>
+							</div>
+						</div>
+					</div>
+
+					<!--슬라이드4-->
+					<div class="item"> 
+						<img src=/img/howto4.png style="width:500px" data-src="" alt="Third slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h3> 4. 여행을 보내준다! </h3>
+							</div>
+						</div>
+					</div>
+
+				</div> 
 				</div>
+					<!--이전, 다음 버튼-->
+					<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+					<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>  -->
 			</div>
 		</div>
-		<!--슬라이드1-->
 
-		<!--슬라이드2-->
-		<div class="item"> 
-			<img src=/img/mi2.png
-			style="width:100%" data-src="" alt="Second slide">
-			<div class="container">
-				<div class="carousel-caption">
-					<h1>Slide 2</h1>
-					<p>텍스트 2</p>
+		<!-- 이번주 주제 -->
+		<div class="embed-responsive embed-responsive-16by9">
+			<figure class="overlay">
+			<video autoplay loop class="embed-responsive-item">
+			<source src="img/mission_april.mp4" type="video/mp4"></video>
+			<figcaption>
+				<h3> 4월 첫째주 미션! </h3>
+				<h1> 사막에서 춤을 춰라! </h1>
+			</figcaption>
+			</figure>
+
+			<!-- <img class="img-responsive" src="/img/mission.png" alt="bg img" >
+				<div class="caption">
 				</div>
-			</div>
+ -->
 		</div>
-		<!--슬라이드2-->
-		
-		<!--슬라이드3-->
-		<div class="item"> 
-			<img src=/img/mi3.png
-			 style="width:100%" data-src="" alt="Third slide">
-			<div class="container">
-				<div class="carousel-caption">
-					<h1>Slide 3</h1>
-					<p>텍스트 3</p>
-				</div>
-			</div>
+
+		<!-- STAFF's pick -->
+		<div class="jumbotron bg-howto">
+			<h1> STAFF's Pick 이 들어갈 자리</h1>
 		</div>
-		<!--슬라이드3-->
 
-			<!--슬라이드4-->
-		<div class="item"> 
-			<img src=/img/mi4.png
-			 style="width:100%" data-src="" alt="Forth slide">
-			<div class="container">
-				<div class="carousel-caption">
-					<h1>Slide 4</h1>
-					<p>텍스트 4</p>
-				</div>
-			</div>
+		<!-- new&hot video -->
+		<div class="jumbotron">
+			<h1> new&hot video 들어갈 자리</h1>
 		</div>
-		<!--슬라이드4-->
-	</div> 
-	</div>
-	
 
 
+		<!-- 회사소개? or 업로드뽐뿌 -->
+		<div class="jumbotron">
+			<img class="img-responsive" src="/img/upload.jpeg" alt="upload img" >
+			<button class="btn btn-default"> 업로드하러가기 </button>
+		</div>
 
-	<!--이전, 다음 버튼-->
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
-	<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
-</div>
-  
 
-</body>
+	</body>
 </html>
-
