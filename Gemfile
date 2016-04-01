@@ -49,6 +49,7 @@ group :development, :test do
   gem 'minitest-rails-capybara'
   gem 'mocha', require: false
   gem 'hirb'
+  gem 'faker'
 end
 
 gem 'compass-rails'
@@ -57,11 +58,13 @@ gem 'jquery-ui-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jasny-bootstrap'
+  gem 'rails-assets-typeahead.js'
 end
 
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
+
 
 
 

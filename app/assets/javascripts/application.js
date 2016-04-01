@@ -15,5 +15,6 @@
 //= require jquery-ui
 //= require bootstrap-sprockets
 //= require jasny-bootstrap
+//= require typeahead.js.js
 
 //= require_tree .
