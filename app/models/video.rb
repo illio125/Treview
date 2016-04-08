@@ -42,4 +42,9 @@ class Video < ActiveRecord::Base
     result = client.execute(key:  Figaro.env.youtube_key, api_method: youtube.videos.list, parameters: {id: vid, part: 'snippet, contentDetails, status'})
     result = JSON.parse(result.data.to_json)
   end
+
+  def id_with_title
+    # "#{id}-#{video.vid}"
+    "#{id}-#{title}".gsub(/[ \-()\[\].\/']/,"_").squeeze("_").downcase()
+  end
 end
