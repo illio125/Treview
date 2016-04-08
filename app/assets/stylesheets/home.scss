@@ -1,3 +1,41 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+	div.home{
+		.jumbotron {
+		  	background-color: transparent; 
+		  	color: #00000;
+		  	text-align: center;
+		  }
+
+		 div.upload{
+			background: #FF5D5D;
+			min-height: 350px;
+			padding: 0; //마지막 업로드의 패딩만 줄인다
+		} 
+
+		.bg-howto{
+		  	background-color: #FF5D5D;   /*treview-colour*/
+		  	padding-top: 15px;
+		  }
+
+		.overlay figcaption {
+		    position: absolute;
+		    z-index: 1000; /*뭔지 모르겠음 찾아볼것*/
+		    height: 100%;
+		    width: 100%;
+		    padding-top: 15%;
+		    padding-bottom: 15%;
+		    padding-left: 5%;
+		    color: #FFF;
+		    font-weight: 700;
+		    text-align: center;
+		    font-size: 20px; /**some fallback value**/
+		    font-size: 5.4vw; /**responsive size**/
+		}
+		.img-center{
+			margin: 0 auto;
+		}
+
+	}

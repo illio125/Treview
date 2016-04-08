@@ -1,74 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	  <title> Suzin Testing </title>
-		  <meta charset="utf-8">
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-		  <style>
-		  .jumbotron {
-		  	background-color: transparent; 
-		  	color: #00000;
-		  	text-align: center;
-		  }
-
-		  .bg-howto{
-		  	background-color: #FF5D5D;   /*treview-colour*/
-		  	padding-top: 15px;
-		  }
-		  .overlay figcaption {
-		    position: absolute;
-		    z-index: 1000; /*뭔지 모르겠음 찾아볼것*/
-		    height: 100%;
-		    width: 100%;
-		    padding-top: 15%;
-		    padding-bottom: 15%;
-		    padding-left: 5%;
-		    color: #FFF;
-		    font-weight: 700;
-		    text-align: center;
-		    font-size: 20px; /**some fallback value**/
-		    font-size: 5.4vw; /**responsive size**/
-		}
-		.img-center{
-			margin: 0 auto;
-		}
-
-
-		  </style>
-
-
-	</head>
-	<body>
+<div clss='home'>
 		<!-- 로고&모토 들어가는 div -->
 		<!-- 16:9 aspect ratio -->
 		<div class="embed-responsive embed-responsive-16by9">
 			<figure class="overlay">
-			<video autoplay loop class="embed-responsive-item">
-			<source src="img/sea.mp4" type="video/mp4"></video>
-			<figcaption>
-				<img src=/img/main_logo.png style="width:500px"><br>
-				<h3>Review your Travel, Treview </h3>
-			</figcaption>
+				<video autoplay loop class="embed-responsive-item">
+					<source src="img/sea.mp4" type="video/mp4">
+				</video>
+				<figcaption>
+					<img src=/img/main_logo.png style="width:500px"><br>
+					<h3>Review your Travel, Treview </h3>
+				</figcaption>
 			</figure>
-
-			<!-- 
-		    <iframe class="embed-responsive-item" src="img/sea.mp4"></iframe> -->
-
 		</div>
-		<!-- 
-		<div class="jumbotron text-center"> 
-		  		<img src=/img/main_logo.png style="width:500px">
-		  		<p> Review your Travel, Treview </p> 
 
-		</div> -->
 		<!--  -에서 -하기 이미지 넣을곳 -->	
-		<div class="jumbotron bg-howto row">
+		<div class="jumbotron bg-howto">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">  
 				
 				<!--페이지-->
@@ -120,12 +66,13 @@
 							</div>
 						</div>
 					</div>
+					</div>
+			</div>
 
-				</div> 
-				</div>
+		</div> 
 					<!--이전, 다음 버튼-->
-					<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
-					<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>  -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+					<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
 			</div>
 		</div>
 
@@ -139,11 +86,6 @@
 				<h1> 사막에서 춤을 춰라! </h1>
 			</figcaption>
 			</figure>
-
-			<!-- <img class="img-responsive" src="/img/mission.png" alt="bg img" >
-				<div class="caption">
-				</div>
- -->
 		</div>
 
 		<!-- STAFF's pick -->
@@ -158,11 +100,8 @@
 
 
 		<!-- 회사소개? or 업로드뽐뿌 -->
-		<div class="jumbotron">
+		<div class="jumbotron upload">
 			<img class="img-responsive" src="/img/upload.jpeg" alt="upload img" >
 			<button class="btn btn-default"> 업로드하러가기 </button>
 		</div>
-
-
-	</body>
-</html>
+</div>
