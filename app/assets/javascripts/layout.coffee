@@ -48,12 +48,12 @@ jQuery ->
       unless input == ""
         window.location.href = "/videos?for=#{input}"
 
-    $(window).resize ->
-      height = $('div#background').height()
-      top = $('div.row.travel_search').position().top
-      searchHeight = $('div.row.travel_search').height()
-      marginTop = (height - searchHeight) / 2 - top
-      $('div.row.travel_search').css('margin-top', marginTop)
+    # $(window).resize ->
+    #   height = $('div#background').height()
+    #   top = $('div.row.travel_search').position().top
+    #   searchHeight = $('div.row.travel_search').height()
+    #   marginTop = (height - searchHeight) / 2 - top
+    #   $('div.row.travel_search').css('margin-top', marginTop)
     $(window).resize()
 
 

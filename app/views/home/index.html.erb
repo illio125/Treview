@@ -1,25 +1,51 @@
 
-<div class="container home">
-  <div class="row text-center">
-    <div class="col-md-12">
-      <h1>Video for Traveller</h1>
-    </div>
-  </div>
+<div class="container-fluid home">
+  <div id="fullpage">
+    <div class="section " id="section0">
+      <video autoplay loop muted id="myVideo">
+        <source src="assets/flowers.mp4" type="video/mp4">
+        <source src="assets/flowers.webm" type="video/webm">
+      </video>
 
-  <div class="row travel_search" data-travels="<%= @travels.to_json %>">
-    <div class='col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3'>
-      <div class="input-group">
-        <input type="text" class="form-control typeahead" placeholder="Midnight in Paris" >
-        <span class="input-group-btn">
-          <button class="btn btn-danger search" type="button">Go</button>
-        </span>
+      <div class="layer">
+        <!-- <h1>fullPage.js videos</h1> -->
+        <div class="row travel_search text-left" data-travels="<%= @travels.to_json %>">
+          <div class='col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3'>
+            <div class="input-group">
+              <input type="text" class="form-control typeahead" placeholder="Midnight in Paris" >
+              <span class="input-group-btn">
+              <button class="btn btn-danger search" type="button">Go</button>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="section" id="section1">
+      <div class="slide" id="slide1">
+        <div class="intro">
+          <h1>How to do it</h1>
+          <p>
+            You will need to place your header and footer outside the plugin's wrapper.
+            This way it won't move on scrolling. Take a look at the source code of this page.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide" id="slide2">
+        <h1>Slide 2</h1>
+        <img src="/assets/iphone-blue.png" alt="iphone" id="iphone-two" />
+      </div>
+    </div>
+
+    <div class="section" id="section2">
+      <h1>Lovely images <br />for a lovely page</h1>
+    </div>
+
+    <div class="section" id="section3">
+      <h1>One Image = One thousand words</h1>
+    </div>
+
   </div>
 </div>
-
-<div id="background"></div>
-
-<!-- <video autoplay loop muted id="background">
-  <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
-</video> -->

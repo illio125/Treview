@@ -17,4 +17,7 @@
 //= require jasny-bootstrap
 //= require typeahead.js.js
 
+//= require slimscroll
+//= require fullpage
+
 //= require_tree .

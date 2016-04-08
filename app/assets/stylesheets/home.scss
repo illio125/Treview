@@ -17,9 +17,55 @@
   background-size: cover;
 }
 
-.container.home {
-  h1 {
-    color: white;
+.container-fluid.home {
+  padding: 0px;
+
+  h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+  }
+
+  .intro p{
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+  }
+
+  .section{
+    text-align:center;
+    overflow: hidden;
+  }
+
+  #section0 {
+    overflow: hidden;
+    .layer {
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      left: 0;
+      top: 43%;
+    }
+
+    #myVideo{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top:0;
+      right:0;
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-color: black; /* in case the video doesn't fit the whole page*/
+      // background-image: /* our video */;
+      background-position: center center;
+      background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:3;
+    }
   }
 }
 

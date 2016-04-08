@@ -59,6 +59,8 @@ gem 'jquery-ui-rails'
 source 'https://rails-assets.org' do
   gem 'rails-assets-jasny-bootstrap'
   gem 'rails-assets-typeahead.js'
+  gem 'rails-assets-slimscroll', '1.3.6'
+  gem 'rails-assets-fullpage'
 end
 
 gem 'omniauth'
