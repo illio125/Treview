@@ -65,7 +65,4 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
 
-
-
-
-
+gem 'google-api-client', '~> 0.7.1'
