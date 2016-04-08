@@ -1,3 +1,25 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  @include translate(-50%, -50%);
+  background: url(/assets/sample.jpg) no-repeat;
+  background-size: cover;
+}
+
+.container.home {
+  h1 {
+    color: white;
+  }
+}
+
