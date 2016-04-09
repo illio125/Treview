@@ -1,3 +1,61 @@
 // Place all the styles related to the videos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.container.videos {
+  div.video_thumb {
+    position: relative;
+    padding: 0 12px;
+    margin-bottom: 24px;
+
+    img {
+     display: block;
+     width: 100%
+    }
+
+    div.about {
+      a.title {
+        display: inline-block;
+        margin-top: 6px;
+        max-height: 3.3em;
+        font-size: 12px;
+        line-height: 1.1em;
+        overflow: hidden;
+        white-space: normal;
+        word-wrap: break-word;
+        z-index: 9999;
+      }
+
+      span.publisher {
+        display: block;
+        margin-top: 0px;
+        max-height: 1.1em;
+        font-size: 12px;
+        line-height: 1.1em;
+        overflow: hidden;
+        white-space: normal;
+        word-wrap: break-word;
+      }
+      span.likes {
+        display: inline-block;
+        margin-top: 2px;
+        max-height: 1.1em;
+        font-size: 12px;
+        line-height: 1.1em;
+        overflow: hidden;
+        white-space: normal;
+        word-wrap: break-word;
+      }
+      span.date {
+        display: inline-block;
+        margin-top: 2px;
+        max-height: 1.1em;
+        font-size: 12px;
+        line-height: 1.1em;
+        overflow: hidden;
+        white-space: normal;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

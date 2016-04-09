@@ -59,23 +59,3 @@ html, body {
   a.flash_close { color: white; }
 }
 
-#background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  @include translate(-50%, -50%);
-  background: url(/assets/sample.jpg) no-repeat;
-  background-size: cover;
-}
-
-.container.home {
-  h1 {
-    color: white;
-  }
-}
-
