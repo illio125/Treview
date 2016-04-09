@@ -22,7 +22,7 @@ namespace :treview do
     Video.destroy_all
     ActiveRecord::Base.connection.reset_pk_sequence! 'videos'
 
-    vids = %w( I3dezFzsNss gAal8xHfV0c AAbokV76tkU yMqL1iWfku4 6SwiSpudKWI q_gfD3nvh-8
+    vids = %w( DfSCBga7MbE kr24vkfvzT8 1hkG8G7Q8E0 I3dezFzsNss gAal8xHfV0c AAbokV76tkU yMqL1iWfku4 6SwiSpudKWI q_gfD3nvh-8
                 XgkfqIrDeS4 3Ua46g4kpic bSeFrPrqZ2A PYVuiDgCNho Tppzb6tcZNQ FrolQnVuPqs
                 YDugfMegHuE 4dzQ9rk_AaQ 116_uIB2DP4 wsgsQ_1QFBs IPCCT_gqvd0 IHKUDUfnLn4
                 wKzNYlQBh_I PX3k11lAwc8 HkMNOlYcpHg Ks-_Mh1QhMc fFfVkXekgH4)
