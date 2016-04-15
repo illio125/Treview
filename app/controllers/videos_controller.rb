@@ -5,6 +5,6 @@ class VideosController < ApplicationController
   end
 
   def show
-    @video = Video.find params[:id]
+    @video = Video.find params[:id].split("_").first
   end
 end

@@ -17,4 +17,7 @@
 //= require jasny-bootstrap
 //= require typeahead.js.js
 
+//= require video.js/dist/video.js
+//= require videojs-youtube/dist/Youtube.js
+
 //= require_tree .

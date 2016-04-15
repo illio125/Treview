@@ -1,3 +1,8 @@
-<div class="container videos">
-  <h1><%= @video.title %></h1>
+<div class="container video">
+  <!-- <h1><%#= @video.title %></h1> -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <video id="video_id" class="embed-responsive-item video-js vjs-default-skin vjs-big-play-centered">
+      <source src="http://www.youtube.com/embed/<%= @video.vid %>" type="video/youtube">
+    </video>
+  </div>
 </div>
