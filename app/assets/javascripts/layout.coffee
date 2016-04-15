@@ -2,7 +2,7 @@ jQuery ->
   if $('div.flash').length
     setTimeout(
       ->
-        $('div.flash').fadeOut(1000)
+        $('div.flash').fadeOut(0)
       5000
     )
 

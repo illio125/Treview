@@ -7,7 +7,7 @@ jQuery ->
     $('#fullpage').fullpage
       verticalCentered: true
       anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage']
-      sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', 'steelblue']
+      sectionsColor: ['#C63D0F', '#FF5D5D', '#7E8F7C', 'steelblue']
       css3: true
       afterRender: ->
         $('video').get(0).play()
