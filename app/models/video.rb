@@ -47,4 +47,16 @@ class Video < ActiveRecord::Base
     # "#{id}-#{video.vid}"
     "#{id}-#{title}".gsub(/[ \-()\[\].\/']/,"_").squeeze("_").downcase()
   end
+
+  def self.sample_video(vid, subject, user)
+    video = Video.create_from_youtube(vid)
+    if video
+      video.travel = Travel.find_or_create_by(name: subject)
+      video.uploader = user if user.present?
+      video.save
+      puts "#{vid} was created"
+    else
+      puts "#{vid} was rejected"
+    end
+  end
 end

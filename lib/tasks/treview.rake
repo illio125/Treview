@@ -41,4 +41,20 @@ namespace :treview do
       end
     end
   end
+
+  desc "create videos_with_subject"
+  task videos_with_subject: :environment do
+    Travel.destroy_all
+    Video.destroy_all
+
+    ActiveRecord::Base.connection.reset_pk_sequence! 'travels'
+    ActiveRecord::Base.connection.reset_pk_sequence! 'videos'
+
+    user = User.first
+    Video.sample_video('DfSCBga7MbE', 'Do something in Paris', user)
+    Video.sample_video('kr24vkfvzT8', 'Do something in Paris', user)
+    Video.sample_video('1hkG8G7Q8E0', 'Do something in Paris', user)
+
+    puts "***#{Video.count} videos are created."
+  end
 end
