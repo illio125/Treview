@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :videos
   resources :dummies
+  resources :users
 
   root 'home#index'
 end
