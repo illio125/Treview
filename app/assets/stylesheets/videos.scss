@@ -23,7 +23,7 @@ div.container.videos {
         overflow: hidden;
         white-space: normal;
         word-wrap: break-word;
-        z-index: 9999;
+        z-index: 9999; //쌓이는 레이아웃 우선순위
       }
 
       span.publisher {
