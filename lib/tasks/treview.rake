@@ -57,4 +57,10 @@ namespace :treview do
 
     puts "***#{Video.count} videos are created."
   end
+
+  desc "make me admin"
+  task admin: :environment do
+    u = User.first
+    u.update_attribute(:admin, true)
+  end
 end

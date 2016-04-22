@@ -7,5 +7,9 @@ Rails.application.routes.draw do
   resources :dummies
   resources :users
 
+  namespace :admin do
+    resources :travels
+  end
+
   root 'home#index'
 end

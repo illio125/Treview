@@ -1,0 +1,25 @@
+<div class='container travels'>
+  <table class='table'>
+    <tr>
+      <th>id</th>
+      <th>Subjects</th>
+      <th># of Videos</th>
+      <th></th>
+    </tr>
+
+    <% @travels.each do |travel| %>
+    <tr>
+      <td><%= travel.id %></td>
+      <td><%= travel.name %></td>
+      <td><%= travel.videos.size %></td>
+      <td class='text-right'>
+        <%= link_to 'Show', videos_path(for: travel.name.gsub(/ /, "-")), class: 'btn btn-success btn-xs' %>
+        <%= link_to 'Edit', edit_admin_travel_path(travel), class: 'btn btn-success btn-xs' %>
+        <%= link_to 'Remove', admin_travel_path(travel), method: :delete, class: 'btn btn-danger btn-xs' %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+
+  <a href="<%= new_admin_travel_path %>" class='btn btn-primary'><i class='glyphicon glyphicon-plus'></i> Add Travel</a>
+</div>

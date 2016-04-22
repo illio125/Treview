@@ -19,7 +19,12 @@
 
     <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
       <% if current_user %>
-        <li class='text-right'><a href="/">My Account</a></li>
+        <li class='text-right'>
+          <%= link_to "My Videos1", "/users/#{current_user.id_with_name}" %>
+        </li>
+        <li class='text-right'>
+          <%= link_to "My Videos", "/users/#{current_user.id_with_name}" %>
+        </li>
         <li class='text-right'><a href='/logout'>Sign out</a></li>
       <% else %>
         <li class='text-right'><a href='/auth/facebook'>Sign in with Facebook</a></li>
