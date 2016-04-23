@@ -1,0 +1,39 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+secret_key_base: 'a9f025f025090f3bf71e645fe056d5563360d799c690548008d7f00881d22ea2f03e6eb6bfac66cd7a43833bd2ab0bdf1d7685f219c4e9e9b0ba2a5288b8cf79'
+# email_password: 'Wnffldpt10h'
+
+GOOGLE_CLIENT_ID: '442431412806-5fsai2vdq63plqas81fg4n3pogmei042.apps.googleusercontent.com'
+GOOGLE_CLIENT_SECRET: '-j7ypNuLvHujvza5g5q6fzfN'
+# GOOGLE_CLIENT_SECRET: 'ej0zl9ni-MWyqaPDZcgBXTje'
+
+TWITTER_CONSUMER_KEY: 'TdXo2WCNlxvuFuC28bBYA'
+TWITTER_CONSUMER_SECRET: 'dFnXT2i4wGq1HTLFbSao4VtiptPgBNBIGYLqDWZcj4'
+
+FACEBOOK_APP_ID: '1384899001795421'
+FACEBOOK_APP_SECRET: '27ebbbf4d4886d3bf694f0bd3eb8e68e'
+
+YOUTUBE_KEY: "AIzaSyCGqsM-Ve3OmTGII_KUGxVvoOVRKvMgbg8"

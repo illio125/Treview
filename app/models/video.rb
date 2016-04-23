@@ -45,7 +45,8 @@ class Video < ActiveRecord::Base
 
   def id_with_title
     # "#{id}-#{video.vid}"
-    "#{id}-#{title}".gsub(/[ \-()\[\].\/']/,"_").squeeze("_").downcase()
+    # "#{id}-#{title}".gsub(/[ \-()\[\].\/']/,"_").squeeze("_").downcase()
+    "#{id}-#{title}".gsub(/[ \-()\[\].\/'&]/,"_").squeeze("_").downcase()
   end
 
   def self.sample_video(vid, subject, user)
