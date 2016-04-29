@@ -17,7 +17,7 @@
 
        <div class="about">
           <%= link_to video.title, video_path(id: video.id_with_title), class: 'title' %>
-          <span class='publisher'><i>by <%= video.uploader.name %></i></span>
+          <a href="/users/<%= video.uploader.id_with_name %>" class='publisher'><span><i>by <%= video.uploader.name %></i></span></a>
           <!-- <span class='likes text-muted'><%#= "#{Faker::Number.number(6)} likes, " %></span> -->
           <!-- <span class='date text-muted'><%#= time_ago_in_words Faker::Time.backward(14, :evening) %> ago</span> -->
         </div>

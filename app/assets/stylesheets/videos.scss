@@ -46,16 +46,21 @@ div.container.videos, div.container.user {
         z-index: 9999;
       }
 
-      span.publisher {
-        display: block;
-        margin-top: 0px;
-        max-height: 1.1em;
-        font-size: 12px;
-        line-height: 1.1em;
-        overflow: hidden;
-        white-space: normal;
-        word-wrap: break-word;
+      a.publisher {
+        color: #333;
+
+        span {
+          display: block;
+          margin-top: 0px;
+          max-height: 1.1em;
+          font-size: 12px;
+          line-height: 1.1em;
+          overflow: hidden;
+          white-space: normal;
+          word-wrap: break-word;
+        }
       }
+
       span.likes {
         display: inline-block;
         margin-top: 2px;
