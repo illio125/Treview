@@ -48,6 +48,6 @@ class Admin::TravelsController < ApplicationController
   end
 
   def travel_params
-    params.require(:travel).permit(:name)
+    params.require(:travel).permit(:todo, :place, :preposition)
   end
 end

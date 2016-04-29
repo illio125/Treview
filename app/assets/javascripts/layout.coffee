@@ -10,7 +10,9 @@ jQuery ->
     e.preventDefault()
     $('div.flash').fadeOut(1000)
 
-  # if $('div.form-group select').length
-  #   $('div.form-group select').addClass('form-control')
+  if $('div.form-group select').length
+    $('div.form-group select').addClass('form-control')
+
+
 
 

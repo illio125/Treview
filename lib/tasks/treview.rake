@@ -9,7 +9,7 @@ namespace :treview do
   #   cities = ['Paris', 'New York', 'Tokyo', 'Seoul', 'Bangkok', 'Madrid']
 
   #   100.times do
-  #     Travel.create(name: "#{Faker::Lorem.word} in #{cities[rand(cities.length)]}")
+  #     Travel.create(subject: "#{Faker::Lorem.word} in #{cities[rand(cities.length)]}")
   #   end
 
   #   puts "***#{Travel.count} travel subjects are created."

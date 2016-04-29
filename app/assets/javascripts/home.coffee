@@ -6,7 +6,7 @@ jQuery ->
   if $('div.container.home').length
     if $('div.row.travel_search').length
       travels = new Bloodhound(
-        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name')
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('subject')
         queryTokenizer: Bloodhound.tokenizers.whitespace
         local: $('div.travel_search').data('travels')
         # remote:
@@ -22,7 +22,7 @@ jQuery ->
         },
         {
           name: 'travels'
-          display: 'name'
+          display: 'subject'
           source: travels
           limit: 99
           templates:
@@ -30,7 +30,7 @@ jQuery ->
               "<div class='empty-message'>Not in the List</div>"
             ].join("\n")
             suggestion: (data) ->
-              "<div>#{data.name}</div>"
+              "<div>#{data.subject}</div>"
         }
       )
 

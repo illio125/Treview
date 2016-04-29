@@ -1,15 +1,8 @@
 class VideosController < ApplicationController
   def index
-    # render text: params
-    # @videos = Video.all
-
     subject = params[:for].gsub(/-/, " ")
-    @travel = Travel.find_by(name: subject )
-    if @travel
-      @videos = @travel.videos
-    else
-      @videos = Video.none
-    end
+    @travels = Travel.search(subject)
+    @videos = Video.where(travel_id: @travels.map(&:id))
   end
 
   def show

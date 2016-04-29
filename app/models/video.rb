@@ -52,7 +52,7 @@ class Video < ActiveRecord::Base
   def self.sample_video(vid, subject, user)
     video = Video.create_from_youtube(vid)
     if video
-      video.travel = Travel.find_or_create_by(name: subject)
+      video.travel = Travel.parse_subject(subject)
       video.uploader = user if user.present?
       video.save
       puts "#{vid} was created"
