@@ -17,5 +17,5 @@ jQuery ->
                 showinfo: 1
                 cc_load_policy: 1
 
-    player.ready ->
-      player.play()
+    # player.ready ->
+    #   player.play()
