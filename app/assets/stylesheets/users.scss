@@ -1,3 +1,12 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.container.user {
+  div.tab-content {
+    padding-top: 24px;
+    min-height: 240px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+}

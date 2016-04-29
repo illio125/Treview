@@ -22,7 +22,7 @@ class Video < ActiveRecord::Base
       title = result["items"][0]["snippet"]["title"]
       media_url = "http://www.youtube.com/embed/#{vid}?rel=0&controls=1&disablekb=1&fs=0"
       thumbnails = result["items"][0]["snippet"]["thumbnails"]
-      thumbnail  = thumbnails["high"] || thumbnails["standard"] || thumbnails["medium"] || thumbnails["default"]
+      thumbnail  = thumbnails["medium"] || thumbnails["high"] || thumbnails["standard"] || thumbnails["default"]
       cover_url  = thumbnail['url']
       dur = /^*(\d+)M(\d+)S/.match(result["items"][0]["contentDetails"]["duration"])
       if dur == nil

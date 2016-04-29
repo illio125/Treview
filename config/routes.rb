@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :videos
   resources :dummies
   resources :users
+  resources :subscriptions, only: [:create]
+
+  delete '/subscriptions', to: 'subscriptions#destroy', as: 'unsubscription'
 
   namespace :admin do
     resources :travels

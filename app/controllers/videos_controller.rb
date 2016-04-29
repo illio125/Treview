@@ -8,4 +8,11 @@ class VideosController < ApplicationController
   def show
     @video = Video.find params[:id].split("_").first
   end
+
+  def destroy
+    @video = Video.find(params[:id])
+    @video.destroy
+
+    redirect_to :back
+  end
 end

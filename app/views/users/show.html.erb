@@ -1,3 +1,32 @@
 <div class="container user">
-  <h1><%= @user.name %>'s Video List</h1>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#upload" aria-controls="upload" role="tab" data-toggle="tab">
+        Uploaded <%= "(#{@user.upload_videos.count})" %>
+      </a>
+    </li>
+    <li role="presentation">
+      <a href="#subscription" aria-controls="subscription" role="tab" data-toggle="tab">
+        Subscription <%= "(#{@user.videos.count})" %>
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="upload">
+      <div class="row">
+        <div class="col-sm-12">
+          <%= render "videos/videos", videos: @user.upload_videos %>
+        </div>
+      </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane fade" id="subscription">
+      <div class="row">
+        <div class="col-sm-12">
+          <%= render "videos/videos", videos: @user.videos %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

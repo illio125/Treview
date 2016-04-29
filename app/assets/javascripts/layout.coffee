@@ -13,6 +13,6 @@ jQuery ->
   if $('div.form-group select').length
     $('div.form-group select').addClass('form-control')
 
-
+  $('[data-toggle="tooltip"]').tooltip()
 
 
