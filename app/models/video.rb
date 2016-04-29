@@ -5,6 +5,9 @@ class Video < ActiveRecord::Base
   belongs_to :uploader, foreign_key: :user_id, class_name: User
   belongs_to :travel
 
+  has_many :subscriptions, dependent: :destroy
+  has_many :users, through: :subscriptions
+
   def self.create_from_youtube(vid)
     video = self.find_by(vid: vid)
     return video if video.present?

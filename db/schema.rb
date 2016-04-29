@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160429150356) do
+ActiveRecord::Schema.define(version: 20160429173706) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 20160429150356) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "video_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "subscriptions", ["user_id"], name: "index_subscriptions_on_user_id", using: :btree
+  add_index "subscriptions", ["video_id"], name: "index_subscriptions_on_video_id", using: :btree
 
   create_table "travels", force: :cascade do |t|
     t.datetime "created_at",                 null: false
@@ -58,6 +68,8 @@ ActiveRecord::Schema.define(version: 20160429150356) do
   add_index "videos", ["user_id"], name: "index_videos_on_user_id", using: :btree
   add_index "videos", ["vid"], name: "index_videos_on_vid", using: :btree
 
+  add_foreign_key "subscriptions", "users"
+  add_foreign_key "subscriptions", "videos"
   add_foreign_key "videos", "travels"
   add_foreign_key "videos", "users"
 end
