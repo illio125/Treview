@@ -1,8 +1,41 @@
 <div class="container video">
   <!-- <h1><%#= @video.title %></h1> -->
-  <div class="embed-responsive embed-responsive-16by9">
-    <video id="video_id" class="embed-responsive-item video-js vjs-default-skin vjs-big-play-centered">
-      <source src="http://www.youtube.com/embed/<%= @video.vid %>" type="video/youtube">
-    </video>
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      <div class="embed-responsive embed-responsive-16by9">
+        <video id="video_id" class="embed-responsive-item video-js vjs-default-skin vjs-big-play-centered">
+          <source src="http://www.youtube.com/embed/<%= @video.vid %>" type="video/youtube">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 12px;">
+    <div class="col-sm-offset-1 col-sm-10">
+      <div class="row">
+        <div class="col-xs-4">
+
+        </div>
+        <div class="col-xs-4 text-center">
+          <%= link_to @video.travel.subject, videos_path(for: @video.travel.subject.gsub(/ /, "-")) %>
+        </div>
+        <div class="col-xs-4 text-right">
+          <% if current_user && current_user == @video.uploader %>
+            <%= link_to 'Delete', @video, class: "btn btn-xs btn-danger", method: :delete %>
+          <% elsif current_user && @video.user_ids.include?(current_user.id) %>
+            <%= link_to 'Unsubscribe', unsubscription_path(video_id: @video.id, user_id: current_user.id), class: "btn btn-xs btn-danger", method: :delete %>
+          <% else %>
+            <%= link_to 'Subscribe', subscriptions_path(video_id: @video.id, user_id: current_user.id), class: "btn btn-xs btn-primary", method: :post %>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
+
+
+
+
+
+
