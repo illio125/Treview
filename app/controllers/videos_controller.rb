@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   def index
-    puts "***#{params[:for]}"
+    # puts "***#{params[:for]}"
     subject = params[:for].gsub(/-/, " ")
     @travels = Travel.search(subject)
     @videos = Video.where(travel_id: @travels.map(&:id))
