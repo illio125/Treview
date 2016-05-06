@@ -1,13 +1,13 @@
 class Travel < ActiveRecord::Base
   has_many :videos, dependent: :destroy
   before_save :make_subject
-  PREPS = %w(in for on at)
+  PREPS = %w(in for on at with by)
 
   default_scope -> { order("id asc") }
 
   scope :search, -> (subject=nil) do
     if subject.present?
-      subject =~ /(^.*)(in|for|on|at)(.*)/
+      subject =~ /(^.*)(in|for|on|at|with|by)(.*)/
       todo = $1.strip if $1
       place = $3.strip if $3
       if todo.present? and place.present?
@@ -22,7 +22,7 @@ class Travel < ActiveRecord::Base
 
   def self.parse_subject(subject)
     unless travel = self.find_by(subject: subject)
-      subject =~ /(^.*)(in|for|on|at)(.*)/
+      subject =~ /(^.*)(in|for|on|at|with|by)(.*)/
       travel = self.new(todo: $1.strip, preposition: $2, place: $3.strip)
       travel.save
     end

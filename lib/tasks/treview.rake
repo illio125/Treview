@@ -73,14 +73,31 @@ namespace :treview do
     Video.sample_video('DfSCBga7MbE', 'Do something in Paris', User.offset(rand(User.count)).first)
     Video.sample_video('kr24vkfvzT8', 'Do something in Paris', User.offset(rand(User.count)).first)
     Video.sample_video('1hkG8G7Q8E0', 'Do something in Paris', User.offset(rand(User.count)).first)
+    Video.sample_video('Syy1vZ09sv8', 'Do something in Paris', User.offset(rand(User.count)).first)
 
     Video.sample_video('I3dezFzsNss', 'Clubbing in Paris', User.offset(rand(User.count)).first)
     Video.sample_video('gAal8xHfV0c', 'Clubbing in Paris', User.offset(rand(User.count)).first)
     Video.sample_video('AAbokV76tkU', 'Clubbing in Paris', User.offset(rand(User.count)).first)
+    Video.sample_video('sMgpyv1tHUk', 'Clubbing in Paris', User.offset(rand(User.count)).first)
 
     Video.sample_video('yMqL1iWfku4', '남대문 투어 in 서울', User.offset(rand(User.count)).first)
     Video.sample_video('6SwiSpudKWI', '남대문 투어 in 서울', User.offset(rand(User.count)).first)
     Video.sample_video('XgkfqIrDeS4', '남대문 투어 in 서울', User.offset(rand(User.count)).first)
+
+    Video.sample_video('w4y3lLrqlTQ', 'Meeting at 양재역', User.offset(rand(User.count)).first)
+    Video.sample_video('JZivlwF6jsM', 'Meeting at 양재역', User.offset(rand(User.count)).first)
+    Video.sample_video('nqW8vJTiN8I', 'Meeting at 양재역', User.offset(rand(User.count)).first)
+
+    Video.sample_video('TNIc-5GyxZ4', 'Eat lunch with your family', User.offset(rand(User.count)).first)
+    Video.sample_video('BieutE_OuA8', 'Eat lunch with your family', User.offset(rand(User.count)).first)
+    Video.sample_video('bQyzjU_4q_I', 'Eat lunch with your family', User.offset(rand(User.count)).first)
+
+    Video.sample_video('ZwZGAqZgts', 'Run at the beach', User.offset(rand(User.count)).first)    
+    Video.sample_video('bps6X6ivQ7E', 'Run at the beach', User.offset(rand(User.count)).first)
+    Video.sample_video('EjUOFavhxTs', 'Run at the beach', User.offset(rand(User.count)).first)
+    Video.sample_video('Fiis00ROfT4', 'Run at the beach', User.offset(rand(User.count)).first)
+    Video.sample_video('78RM9Uf724M', 'Run at the beach', User.offset(rand(User.count)).first)
+
 
     puts "***#{Video.count} videos are created."
   end
