@@ -19,3 +19,7 @@ jQuery ->
 
     # player.ready ->
     #   player.play()
+
+  $('a.toggle_upload').on 'click', (e) ->
+    e.preventDefault()
+    $('nav.upload').slideToggle('slow')

@@ -2,6 +2,8 @@ require 'google/api_client'
 require 'json'
 
 class Video < ActiveRecord::Base
+  attr_accessor :youtube_url
+
   belongs_to :uploader, foreign_key: :user_id, class_name: User
   belongs_to :travel
 
@@ -44,6 +46,16 @@ class Video < ActiveRecord::Base
     client.authorization = nil
     result = client.execute(key:  Figaro.env.youtube_key, api_method: youtube.videos.list, parameters: {id: vid, part: 'snippet, contentDetails, status'})
     result = JSON.parse(result.data.to_json)
+  end
+
+  def self.vid_from_youtube_url(url)
+    if res = /(.+)(youtu\.be\/|v=)(.+)/.match(url)
+      res[3]
+    else
+      url
+    end
+    # http://youtu.be/uL_HF6KTdXY
+    # http://www.youtube.com/watch?v=uL_HF6KTdXY
   end
 
   def id_with_title

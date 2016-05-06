@@ -89,3 +89,19 @@ div.container.videos, div.container.user {
 div.container.video {
 
 }
+
+
+nav.upload {
+  display: none;
+  margin-bottom: 50px;
+  padding: 24px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  span.deco {
+    display: inline-block;
+    margin: 12px auto;
+    font-size: 18px;
+    font-family: 'Parisienne', cursive;
+  }
+}
