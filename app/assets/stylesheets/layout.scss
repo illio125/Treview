@@ -16,8 +16,49 @@ html, body {
   }
 
 
-  nav.header {
+header.header {
+    .navbar-header {
+      float: none;
+      a.navbar-brand {
+        font-size: 24px;
+        color: steelblue;
+      }
 
+      .navbar-toggle {
+        display: block;
+      }
+
+      a.navbar-toggle {
+        color: #9d9d9d;
+        border: none;
+        background: none;
+        &:hover, &:focus {
+          // color: white;
+          background: none;
+          text-decoration: none;
+        }
+      }
+    }
+
+    ul.navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    ul.navbar-collapse.collapse {
+     display: none !important;
+    }
+
+    ul.navbar-collapse.collapse.in {
+      display: block !important;
+    }
+
+    ul.navbar-nav {
+      float: none !important;
+      li {
+        float: none;
+      }
+    }
   }
 
   nav.footer {
