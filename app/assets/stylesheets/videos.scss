@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.container.videos, div.container.user {
+ div.container.videos, div.container.user {
   div.video_thumb {
     position: relative;
     padding: 0 12px;
@@ -88,4 +88,20 @@ div.container.videos, div.container.user {
 
 div.container.video {
 
+}
+
+
+nav.upload {
+  display: none;
+  margin-bottom: 50px;
+  padding: 24px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  span.deco {
+    display: inline-block;
+    margin: 12px auto;
+    font-size: 18px;
+    font-family: 'Parisienne', cursive;
+  }
 }

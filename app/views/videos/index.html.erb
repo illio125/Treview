@@ -4,5 +4,6 @@
       <%= render "videos", videos: @videos %>
     </div>
   </div>
-
 </div>
+
+<%= render('upload_form', user: current_user, travel: @travels.first) if current_user %>

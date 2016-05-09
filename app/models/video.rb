@@ -2,6 +2,8 @@ require 'google/api_client'
 require 'json'
 
 class Video < ActiveRecord::Base
+  attr_accessor :youtube_url
+
   belongs_to :uploader, foreign_key: :user_id, class_name: User
   belongs_to :travel
 
@@ -46,6 +48,16 @@ class Video < ActiveRecord::Base
     result = JSON.parse(result.data.to_json)
   end
 
+  def self.vid_from_youtube_url(url)
+    if res = /(.+)(youtu\.be\/|v=)(.+)/.match(url)
+      res[3]
+    else
+      url
+    end
+    # http://youtu.be/uL_HF6KTdXY
+    # http://www.youtube.com/watch?v=uL_HF6KTdXY
+  end
+
   def id_with_title
     # "#{id}-#{video.vid}"
     # "#{id}-#{title}".gsub(/[ \-()\[\].\/']/,"_").squeeze("_").downcase()
@@ -64,3 +76,34 @@ class Video < ActiveRecord::Base
     end
   end
 end
+
+
+<% if params[:controller] == 'videos' %>
+  <nav class="navbar navbar-default navbar-fixed-bottom footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-3 text-left">
+          <% if current_user %>
+            <a href="#" class="toggle_upload"><i class="glyphicon glyphicon-cloud-upload"></i> Add to Treview</a>
+          <% end %>
+        </div>
+        <div class="col-xs-6 text-center">
+          <span>Treview &copy; 2016</span>
+        </div>
+        <div class="col-xs-3 text-right">
+
+        </div>
+      </div>
+    </div>
+  </nav>
+<% else %>
+  <nav class="navbar navbar-default navbar-fixed-bottom footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-12">
+          <span>Treview &copy; 2016</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+<% end %>
