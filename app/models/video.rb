@@ -76,34 +76,3 @@ class Video < ActiveRecord::Base
     end
   end
 end
-
-
-<% if params[:controller] == 'videos' %>
-  <nav class="navbar navbar-default navbar-fixed-bottom footer">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-xs-3 text-left">
-          <% if current_user %>
-            <a href="#" class="toggle_upload"><i class="glyphicon glyphicon-cloud-upload"></i> Add to Treview</a>
-          <% end %>
-        </div>
-        <div class="col-xs-6 text-center">
-          <span>Treview &copy; 2016</span>
-        </div>
-        <div class="col-xs-3 text-right">
-
-        </div>
-      </div>
-    </div>
-  </nav>
-<% else %>
-  <nav class="navbar navbar-default navbar-fixed-bottom footer">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-sm-12">
-          <span>Treview &copy; 2016</span>
-        </div>
-      </div>
-    </div>
-  </nav>
-<% end %>
