@@ -23,3 +23,30 @@
   }
 }
 
+.section {
+  text-align:center;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+  background-size: cover;
+}
+
+// #section1 {
+//   background-image: image-url("bg1.jpg");
+// }
+
+#section2 {
+  background-image: image-url("bg2.jpg");
+}
+
+#section3 {
+  background-image: image-url("bg3.jpg");
+}
+
+#section4 {
+  background-image: image-url("bg4.jpg");
+}
+

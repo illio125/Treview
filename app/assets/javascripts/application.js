@@ -16,6 +16,9 @@
 //= require bootstrap-sprockets
 //= require jasny-bootstrap
 //= require typeahead.js.js
+//= require jquery.fullPage.js
+//= require bootstrap
+
 
 //= require video.js/dist/video.js
 //= require videojs-youtube/dist/Youtube.js
