@@ -2,6 +2,7 @@ html, body {
   margin:0;
   padding:0;
   height:100%;
+  padding-top: 25px;
 
   // font-family: 'Nanum Gothic', Helvetica, Arial, sans-serif;
 
@@ -12,6 +13,7 @@ html, body {
 
   #container {
     // min-height: 640px;
+    padding-top: 40px;
     padding-bottom: 60px;   /* Height of the footer element */
   }
 
