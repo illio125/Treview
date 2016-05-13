@@ -40,8 +40,21 @@
 
 #section2 {
   background-image: image-url("slush.jpg");
-  font-size: 8em;
-  color: white;
+  #week_subject {
+    font-size: 3em;
+    color: white;
+  }
+  p {
+    font-size: 7em;
+    color: white;
+  }
+  a {
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+    color: white;
+  }
 }
 
 #section3 {

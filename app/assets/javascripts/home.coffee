@@ -49,7 +49,6 @@ jQuery ->
         searchHeight = $('div.row.travel_search').height()
         marginTop = (height - searchHeight) / 2 - top
         $('div.row.travel_search').css('margin-top', marginTop)
-      $(window).resize()
 
 $(document).ready ->
   if $('.fullpage-home').length
@@ -73,4 +72,7 @@ $(document).ready ->
       ]
       css3: true
   return
+
+$(window).setTimeout(1000) ->
+  $(window).resize()
 

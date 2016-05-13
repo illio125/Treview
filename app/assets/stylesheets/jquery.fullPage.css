@@ -13,9 +13,9 @@ html, body {
 #superContainer {
     height: 100%;
     position: relative;
-	
+
 	/* Touch detection for Windows 8 */
-	-ms-touch-action: none; 
+	-ms-touch-action: none;
 }
 .section {
     position: relative;

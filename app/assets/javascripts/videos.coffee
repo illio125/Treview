@@ -23,3 +23,26 @@ jQuery ->
   $('a.toggle_upload').on 'click', (e) ->
     e.preventDefault()
     $('nav.upload').slideToggle('slow')
+
+$(document).ready ->
+  if $('.fullpage-video').length
+    $.fn.fullpage
+      menu: '.navbar'
+      verticalCentered: true
+      resize: false
+      anchors: [
+        'firstPage'
+        'secondPage'
+        'thirdPage'
+        'fourthPage'
+      ]
+      navigation: true
+      navigationPosition: 'right'
+      navigationTooltips: [
+        'firstPageTooltip'
+        'secondPageTooltip'
+        'thirdPageTooltip'
+        'fourthPageTooltip'
+      ]
+      css3: false
+  return

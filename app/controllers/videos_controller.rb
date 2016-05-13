@@ -24,7 +24,9 @@ class VideosController < ApplicationController
     else
       render text: 'No Youtube URL'
     end
+  end
 
+  def infomap
   end
 
   def destroy
