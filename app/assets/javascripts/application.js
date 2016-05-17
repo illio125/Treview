@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
+//= require jquery-2.2.3.min
 //= require bootstrap-sprockets
 //= require jasny-bootstrap
 //= require typeahead.js.js

@@ -42,18 +42,19 @@
   background-image: image-url("slush.jpg");
   #week_subject {
     font-size: 3em;
-    color: white;
+    color: #fff;
   }
   p {
     font-size: 7em;
-    color: white;
+    color: #fff;
   }
   a {
     &:hover {
-      color: white;
+      color: #ff73e0;
       text-decoration: none;
+      text-shadow: 2px 2px 2px 2px;
     }
-    color: white;
+    color: #fff;
   }
 }
 
