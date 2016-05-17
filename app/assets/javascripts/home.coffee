@@ -62,17 +62,14 @@ $(document).ready ->
         'thirdPage'
         'fourthPage'
       ]
-      navigation: true
-      navigationPosition: 'right'
-      navigationTooltips: [
-        'firstPageTooltip'
-        'secondPageTooltip'
-        'thirdPageTooltip'
-        'fourthPageTooltip'
-      ]
+            # navigation: true
+      # navigationPosition: 'right'
+      # navigationTooltips: [
+      #   'firstPageTooltip'
+      #   'secondPageTooltip'
+      #   'thirdPageTooltip'
+      #   'fourthPageTooltip'
+      # ]
       css3: true
+    $('video').get(0).play();
   return
-
-$(window).setTimeout(1000) ->
-  $(window).resize()
-

@@ -3,29 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  @include translate(-50%, -50%);
-  background: url(/assets/sample.jpg) no-repeat;
-  background-size: cover;
-}
+  overflow: hidden;
 
-.container.home {
-  h1 {
-    color: #000;
+  video {
+    position: absolute;
+    z-index: -1;
   }
 }
 
-.section {
-  text-align:center;
-}
+// .section {
+//   h3, p, span {
+//   text-align: center;
+//   }
+// }
 
 #section1,
 #section2,
@@ -35,34 +33,28 @@
 }
 
 // #section1 {
-//   background-image: image-url("bg1.jpg");
+//   background: url(/assets/sample.jpg) no-repeat;
 // }
 
 #section2 {
   background-image: image-url("slush.jpg");
-  #week_subject {
-    font-size: 3em;
+  text-align: center;
+  span {
+    font-size: 4em;
     color: #fff;
+    text-shadow: 2px 2px 4px #000;
   }
   p {
-    font-size: 7em;
+    font-size: 8em;
     color: #fff;
+    text-shadow: 4px 4px 8px #ff3f3f;
   }
   a {
     &:hover {
-      color: #ff73e0;
+      color: #ff3f3f;
       text-decoration: none;
-      text-shadow: 2px 2px 2px 2px;
+      text-shadow: 0 0 10px #fff;
     }
     color: #fff;
   }
 }
-
-#section3 {
-  background-image: image-url("bg3.jpg");
-}
-
-#section4 {
-  background-image: image-url("bg4.jpg");
-}
-
