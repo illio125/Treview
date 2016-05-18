@@ -2,8 +2,6 @@ html, body {
   margin:0;
   padding:0;
   height:100%;
-  padding-top: 25px;
-
   // font-family: 'Nanum Gothic', Helvetica, Arial, sans-serif;
 
   #wrapper {
@@ -13,7 +11,7 @@ html, body {
 
   #container {
     // min-height: 640px;
-    padding-top: 40px;
+    padding-top: 65px;
     padding-bottom: 60px;   /* Height of the footer element */
   }
 
@@ -73,21 +71,22 @@ header.header {
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 42px;
+  min-height: 40px;
   text-align: center;
-  z-index: 9999;
+  z-index: 1234;
 
   span {
     display: inline-block;
-    margin-top: 12px;
+    margin: 12px 0;
     font-size: 18px;
     line-height: 27px;
-    color: gold;  // white; // #9d9d9d;
+    color: gold;
+    float: left;
   }
 
   a.flash_close {
     display: inline-block;
-    margin-top: 12px;
+    margin: 12px 0;
     font-size: 18px;
     line-height: 27px;
     color: #9d9d9d;

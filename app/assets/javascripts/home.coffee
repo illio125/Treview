@@ -56,13 +56,14 @@ $(document).ready ->
       menu: '.navbar'
       verticalCentered: true
       resize: false
+      keyboardScrolling: false  # 키보드 스크롤링
       anchors: [
         'firstPage'
         'secondPage'
         'thirdPage'
         'fourthPage'
       ]
-            # navigation: true
+      # navigation: true
       # navigationPosition: 'right'
       # navigationTooltips: [
       #   'firstPageTooltip'
@@ -71,5 +72,5 @@ $(document).ready ->
       #   'fourthPageTooltip'
       # ]
       css3: true
-    $('video').get(0).play();
+    $('video').get(0).play();  # 비디오 배경화면
   return

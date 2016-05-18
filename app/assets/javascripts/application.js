@@ -13,13 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require jquery-2.2.3.min
 //= require bootstrap-sprockets
 //= require jasny-bootstrap
 //= require typeahead.js.js
 //= require jquery.fullPage.js
-//= require bootstrap
-
 
 //= require video.js/dist/video.js
 //= require videojs-youtube/dist/Youtube.js

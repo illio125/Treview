@@ -53,7 +53,7 @@ group :development, :test do
 end
 
 gem 'compass-rails'
-gem 'bootstrap-sass', '~> 3.3.3'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-ui-rails'
 
 source 'https://rails-assets.org' do

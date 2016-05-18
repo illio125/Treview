@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 #video-background {
   position: absolute;
   top: 0;
@@ -19,12 +18,6 @@
   }
 }
 
-// .section {
-//   h3, p, span {
-//   text-align: center;
-//   }
-// }
-
 #section1,
 #section2,
 #section3,
@@ -32,28 +25,24 @@
   background-size: cover;
 }
 
-// #section1 {
-//   background: url(/assets/sample.jpg) no-repeat;
-// }
-
 #section2 {
   background-image: image-url("slush.jpg");
   text-align: center;
   span {
     font-size: 4em;
     color: #fff;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 1px 1px 2px #000;
   }
   p {
     font-size: 8em;
     color: #fff;
-    text-shadow: 4px 4px 8px #ff3f3f;
+    text-shadow: 4px 4px 4px #ff3f3f;
   }
   a {
     &:hover {
       color: #ff3f3f;
       text-decoration: none;
-      text-shadow: 0 0 10px #fff;
+      text-shadow: 2px 2px 8px #fff;
     }
     color: #fff;
   }
