@@ -13,7 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
+<<<<<<< Updated upstream
 //= require bootstrap-sprockets
+=======
+
+>>>>>>> Stashed changes
 //= require jasny-bootstrap
 //= require typeahead.js.js
 //= require jquery.fullPage.js
