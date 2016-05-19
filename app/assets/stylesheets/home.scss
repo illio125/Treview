@@ -39,6 +39,7 @@
     text-shadow: 4px 4px 4px #ff3f3f;
   }
   a {
+    transition: color 1s;
     &:hover {
       color: #ff3f3f;
       text-decoration: none;

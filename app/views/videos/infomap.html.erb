@@ -71,9 +71,48 @@
 
       <!-- Trigger the modal with a button -->
       <!-- <a href="http://localhost:3000/videos/18_slush5"> -->
-      <!-- <img src="assets/slush2016map_info.png" id="myButton" class="img-responsive" data-toggle="modal" data-target="#myModal" alt=""> -->
-      <a href="/videos/14_slush_1" target="_self">
-      <img src="assets/slush2016map_info.png" id="slushmaps" class="img-responsive" data-toggle="modal" data-target="#myModal1" alt=""></a>
+      <!-- <a href="/videos/14_slush_1" target="_self"> -->
+        <!-- <img src="assets/slush2016map_info.png" id="slushmaps" class="img-responsive" data-toggle="modal" data-target="#myModal" alt=""> -->
+      <!-- </a> -->
+
+          <!-- Slider Frame -->
+          <div id="sliderFrame">
+              <div id="slider">
+                  <a data-toggle="modal" data-target="#myModal">
+                  <img id="slushmaps" class="img-responsive" src="assets/slush2016map_info.png" data-toggle="modal" data-target="#myModal" alt="">
+                  </a>
+                  <a data-toggle="modal" data-target="#myModal2">
+                  <img id="slushmaps" class="img-responsive" src="assets/slush2016map_info2.png" data-toggle="modal" data-target="#myModal2" alt="">
+                  </a>
+                  <a data-toggle="modal" data-target="#myModal3">
+                  <img id="slushmaps" class="img-responsive" src="assets/slush2016map_info3.png" data-toggle="modal" data-target="#myModal3" alt="">
+                  </a>
+                  <a data-toggle="modal" data-target="#myModal4">
+                  <img id="slushmaps" class="img-responsive" src="assets/slush2016map_info4.png" data-toggle="modal" data-target="#myModal4" alt="">
+                  </a>
+                  <a data-toggle="modal" data-target="#myModal5">
+                  <img id="slushmaps" class="img-responsive" src="assets/slush2016map_info5.png" data-toggle="modal" data-target="#myModal5" alt="">
+                  </a>
+              </div>
+        <!-- <div style="display: none;">
+            <div id="htmlcaption3">
+                <em>HTML</em> caption. Back to <a href="http://www.menucool.com/">Menucool</a>.
+            </div>
+            <div id="htmlcaption5">
+                Smart Lazy Loading Image
+            </div>
+        </div> -->
+
+        <!--thumbnails-->
+        <div id="thumbs">
+            <div class="thumb"><img src="assets/thumb_info.png" class="img-responsive" alt="" /></div>
+            <div class="thumb"><img src="assets/thumb_info2.png" class="img-responsive" alt="" /></div>
+            <div class="thumb"><img src="assets/thumb_info3.png" class="img-responsive" alt="" /></div>
+            <div class="thumb"><img src="assets/thumb_info4.png" class="img-responsive" alt="" /></div>
+            <div class="thumb"><img src="assets/thumb_info5.png" class="img-responsive" alt="" /></div>
+        </div>
+    </div>
+
     </div>
 
 
@@ -81,26 +120,48 @@
 
 
   <!-- Modal -->
-  <!-- <div id="container video">
+  <div id="container video">
     <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog"> -->
+      <div class="modal-dialog">
       <!-- Modal Content -->
-         <!--  <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Information Map</h4>
-              </div>
-              <div class="modal-body">
-                  <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Social Healing Cam</h4>
+            </div>
+            <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c0FhF89bQ5E" frameborder="0" allowfullscreen></iframe>
+            <div class="modal-footer">
+                <a data-toggle="modal" data-target="#moreModal" class="btn btn-primary">More</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
             </div>
         </div>
       </div>
 
     </div>
-  </div> -->
+  </div>
+
+  <!-- More Info Modal -->
+  <div id="container video">
+    <div class="modal fade bs-example-modal-lg" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <!-- Modal Content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Information</h4>
+            </div>
+            <div class="modal-body">
+                blah blah
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </div>

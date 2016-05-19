@@ -124,3 +124,27 @@ nav.upload {
     font-family: 'Parisienne', cursive;
   }
 }
+
+
+// Modal
+
+@media screen and (min-width: 768px) {
+  .modal .modal-dialog  {width: 768px;}
+}
+
+.modal .modal-dialog  {width:50%;}
+
+
+.modal {
+  top: 5%;
+  outline: none;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+#moreModal {
+  position: absolute;
+  top: 60%;
+}

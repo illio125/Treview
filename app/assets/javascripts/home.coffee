@@ -57,6 +57,7 @@ $(document).ready ->
       verticalCentered: true
       resize: false
       keyboardScrolling: false  # 키보드 스크롤링
+      touchSensitivity: 10
       anchors: [
         'firstPage'
         'secondPage'

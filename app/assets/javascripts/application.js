@@ -21,4 +21,6 @@
 //= require video.js/dist/video.js
 //= require videojs-youtube/dist/Youtube.js
 
+//= require js-image-slider.js
+
 //= require_tree .
