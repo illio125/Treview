@@ -64,16 +64,16 @@
 
 /* --------- Others ------- */
 
-#slider img, #slider>b, #slider a>b {
-    /*position:absolute; border:none; display:none;*/
-}
+/*#slider img, #slider>b, #slider a>b {
+    position:absolute; border:none; display:none;
+}*/
 
 #slider .sliderInner {
     overflow:hidden;
     position:absolute; top:0; left:0;
 }
 
-#slider>a, #slider video, #slider audio {display:none;}
+/*#slider>a, #slider video, #slider audio {display:none;}*/
 
 
 /* -- thumbnails -- */
