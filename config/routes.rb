@@ -16,8 +16,4 @@ Rails.application.routes.draw do
 
   root 'home#index'
   get 'infomap' => 'videos#infomap'
-  get 'infomap2' => 'videos#infomap2'
-  get 'infomap3' => 'videos#infomap3'
-  get 'infomap4' => 'videos#infomap4'
-  get 'infomap5' => 'videos#infomap5'
 end

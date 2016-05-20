@@ -29,18 +29,6 @@ class VideosController < ApplicationController
   def infomap
   end
 
-  def infomap2
-  end
-
-  def infomap3
-  end
-
-  def infomap4
-  end
-
-  def infomap5
-  end
-
   def destroy
     @video = Video.find(params[:id])
     @video.destroy
