@@ -18,33 +18,37 @@
   }
 }
 
-#section1,
-#section2,
-#section3,
-#section4 {
+.section {
   background-size: cover;
 }
 
-#section2 {
-  background-image: image-url("slush.jpg");
+#section2, #section3 {
   text-align: center;
-  span {
+  p.week_sub {
     font-size: 4em;
     color: #fff;
     text-shadow: 1px 1px 2px #000;
   }
-  p {
+  p.week_do {
     font-size: 8em;
     color: #fff;
     text-shadow: 4px 4px 4px #ff3f3f;
   }
   a {
     transition: color 1s;
+    text-decoration: none;
     &:hover {
       color: #ff3f3f;
-      text-decoration: none;
       text-shadow: 2px 2px 8px #fff;
     }
     color: #fff;
   }
+}
+
+#section2 {
+  background-image: image-url("slush.jpg");
+}
+
+#section3 {
+  background: #1234ff;
 }

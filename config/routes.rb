@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 
   root 'home#index'
   get 'infomap' => 'videos#infomap'
+  get 'infomap2' => 'videos#infomap2'
 end
