@@ -16,16 +16,6 @@ ActiveRecord::Schema.define(version: 20160429173706) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "collections", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "video_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "collections", ["user_id"], name: "index_collections_on_user_id", using: :btree
-  add_index "collections", ["video_id"], name: "index_collections_on_video_id", using: :btree
-
   create_table "dummies", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -78,8 +68,6 @@ ActiveRecord::Schema.define(version: 20160429173706) do
   add_index "videos", ["user_id"], name: "index_videos_on_user_id", using: :btree
   add_index "videos", ["vid"], name: "index_videos_on_vid", using: :btree
 
-  add_foreign_key "collections", "users"
-  add_foreign_key "collections", "videos"
   add_foreign_key "subscriptions", "users"
   add_foreign_key "subscriptions", "videos"
   add_foreign_key "videos", "travels"
