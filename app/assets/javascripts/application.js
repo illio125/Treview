@@ -16,11 +16,11 @@
 //= require bootstrap-sprockets
 //= require jasny-bootstrap
 //= require typeahead.js.js
-//= require jquery.fullPage.js
 
 //= require video.js/dist/video.js
 //= require videojs-youtube/dist/Youtube.js
 
 //= require js-image-slider.js
+//= require parallax.min.js
 
 //= require_tree .

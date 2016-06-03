@@ -2,53 +2,113 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
+#treview_logo {
+  margin: 100px auto 0;
+}
+
+.crt-parallaxvideo{
+  height: 700px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+}
+.crt-parallaxvideo video{
   min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  overflow: hidden;
+  position: fixed;
+  top:0;
+  z-index: -100;
 
-  video {
-    position: absolute;
-    z-index: -1;
-  }
+}
+.crt-parallaxvideo h1 {
+    color: #3f3f3f;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    // text-transform: uppercase;
 }
 
-.section {
-  background-size: cover;
+
+.plax.ccparallax-one {
+  height: 700px;
+  background-image: url("/assets/slush.jpg");
+}
+.plax.ccparallax-two {
+  height: 700px;
+  background-image: url("/assets/u300/u300_index.jpg");
 }
 
-#section2, #section3 {
-  text-align: center;
-  p.week_sub {
-    font-size: 4em;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000;
-  }
-  p.week_do {
-    font-size: 8em;
-    color: #fff;
-    text-shadow: 4px 4px 4px #ff3f3f;
-  }
-  a {
-    transition: color 1s;
+.plax:last-child {
+  margin-bottom: 0;
+}
+
+.plax.ccparallax {
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+      p.week_sub {
+      margin-top: 160px;
+        font-size: 4em;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+        text-align: center;
+      }
+
+      p.week_do {
+        font-size: 8em;
+        color: #fff;
+        text-shadow: 4px 4px 4px #ff3f3f;
+        text-align: center;
+      }
+}
+
+.plax a {
+    transition: all 0.5s;
     text-decoration: none;
     &:hover {
       color: #ff3f3f;
+      text-decoration: none;
       text-shadow: 2px 2px 8px #fff;
     }
     color: #fff;
   }
+
+.plax.content {
+    background: none repeat scroll 0 0 #fff;
+    padding: 42px 0;
+
+}
+.plax.ccparallax h1 {
+  font-weight: 700;
+  font-size: 76px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFF;
 }
 
-#section2 {
-  background-image: image-url("slush.jpg");
+.plax .headlines h2 {
+    color: #000;
+    font-family: "PT Sans",sans-serif;
+    font-size: 32px;
+    margin: 0;
+  text-align: center;
+}
+.plax .headlines p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+  color:#000;
+  text-align: center;
+}
+.plax .contentarea, .plax .contentarea h2{
+  color:#000;
 }
 
-#section3 {
-  background-image: image-url("u300/u300_index.jpg");
+
+.btn:hover {
+  transition: all 1s;
 }
+
