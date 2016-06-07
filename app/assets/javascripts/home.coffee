@@ -50,28 +50,41 @@ jQuery ->
         marginTop = (height - searchHeight) / 2 - top
         $('div.row.travel_search').css('margin-top', marginTop)
 
+
+
+### 인덱스 페이지 : 패럴랙스 스크롤 ###
+$ ->
+  if navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)
+    $('#ios-notice').removeClass 'hidden'
+    $('.parallax-container').height $(window).height() * 0.5 | 0
+  else
+    $(window).resize(->
+      parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0
+      $('.parallax-container').height parallaxHeight
+      return
+    ).trigger 'resize'
+  return
+
+
+
+### 인덱스 페이지 : 타이틀 페이드인 ###
+
 $(document).ready ->
-  if $('.fullpage-home').length
-    $.fn.fullpage
-      menu: '.navbar'
-      verticalCentered: true
-      resize: false
-      keyboardScrolling: false  # 키보드 스크롤링
-      touchSensitivity: 10
-      anchors: [
-        'firstPage'
-        'secondPage'
-        'thirdPage'
-        'fourthPage'
-      ]
-      # navigation: true
-      # navigationPosition: 'right'
-      # navigationTooltips: [
-      #   'firstPageTooltip'
-      #   'secondPageTooltip'
-      #   'thirdPageTooltip'
-      #   'fourthPageTooltip'
-      # ]
-      css3: true
-    $('video').get(0).play();  # 비디오 배경화면
+
+  ### Every time the window is scrolled ... ###
+
+  $(window).scroll ->
+
+    ### Check the location of each desired element ###
+
+    $('.week_title').each (i) ->
+      bottom_of_object = $(this).offset().top + $(this).outerHeight()
+      bottom_of_window = $(window).scrollTop() + $(window).height()
+
+      ### If the object is completely visible in the window, fade it it ###
+
+      if bottom_of_window > bottom_of_object
+        $(this).animate { 'opacity': '1' }, 500
+      return
+    return
   return
