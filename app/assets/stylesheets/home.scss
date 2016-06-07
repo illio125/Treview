@@ -27,6 +27,14 @@
     // text-transform: uppercase;
 }
 
+.plax.ccparallax {
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
 
 .plax.ccparallax-one {
   height: 700px;
@@ -41,15 +49,6 @@
   margin-bottom: 0;
 }
 
-.plax.ccparallax {
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-
 .plax.content {
     background: none repeat scroll 0 0 #fff;
     padding: 42px 0;
@@ -57,12 +56,12 @@
 }
 .plax.ccparallax h1 {
   // font-weight: 700;
-  font-size: 76px;
+  font-size: 72px;
   text-align: center;
   // text-transform: uppercase;
   color:#FFF;
     small {
-      font-size: 30px;
+      font-size: 42px;
       color:#fff;
     }
 }
@@ -74,6 +73,7 @@
     margin: 0;
   text-align: center;
 }
+
 .plax .headlines p {
     font-size: 16px;
     font-weight: 300;
@@ -81,16 +81,16 @@
   color:#000;
   text-align: center;
 }
+
 .plax .contentarea, .plax .contentarea h2{
   color:#000;
 }
 
 .week_title {
   margin-top: 160px;
-  padding: 20px 0 60px 0;
+  padding: 30px 0 80px 0;
     background-color:rgba(0, 0, 0, 0.5);
 }
-
 
 .btn:hover {
   transition: all 1s;
