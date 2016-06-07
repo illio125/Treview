@@ -67,24 +67,24 @@ $ ->
 
 
 
-### 인덱스 페이지 : 타이틀 페이드인 ###
+# ### 인덱스 페이지 : 타이틀 페이드인 ###
 
-$(document).ready ->
+# $(document).ready ->
 
-  ### Every time the window is scrolled ... ###
+#   ### Every time the window is scrolled ... ###
 
-  $(window).scroll ->
+#   $(window).scroll ->
 
-    ### Check the location of each desired element ###
+#     ### Check the location of each desired element ###
 
-    $('.week_title').each (i) ->
-      bottom_of_object = $(this).offset().top + $(this).outerHeight()
-      bottom_of_window = $(window).scrollTop() + $(window).height()
+#     $('.week_title').each (i) ->
+#       bottom_of_object = $(this).offset().top + $(this).outerHeight()
+#       bottom_of_window = $(window).scrollTop() + $(window).height()
 
-      ### If the object is completely visible in the window, fade it it ###
+#       ### If the object is completely visible in the window, fade it it ###
 
-      if bottom_of_window > bottom_of_object
-        $(this).animate { 'opacity': '1' }, 500
-      return
-    return
-  return
+#       if bottom_of_window > bottom_of_object
+#         $(this).animate { 'opacity': '1' }, 500
+#       return
+#     return
+#   return
